@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-// import AddIcon from "@material-ui/icons/Add";
-// import Fab from "@material-ui/core/Fab";
-// import Zoom from "@material-ui/core/Zoom";
+import { PlusOutlined } from "@ant-design/icons/lib/icons";
 
 function CreateArea(props) {
   const [isExpanded, setExpanded] = useState(false);
@@ -55,7 +53,9 @@ function CreateArea(props) {
           placeholder="Take a note..."
           rows={isExpanded ? 3 : 1}
         />
-        <button onClick={submitNote}>Add</button>
+        <button onClick={submitNote}>
+        <PlusOutlined />
+        </button>
       </form>
     </div>
   );
